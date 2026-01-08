@@ -7,7 +7,7 @@ $(document).ready(function(){
         var form_data = JSON.stringify(form_data_json);
 
         $.ajax({
-            url: "http://localhost/sia101-BSIT3D-ICGV/code-BSIT3D-ICGV/module5-files/api-icgv/login.php",
+            url: "login.php",
             type : "POST",
             contentType : 'application/json',
             data : form_data,
