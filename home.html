@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project Name</title>
+
+    <!-- bootstrap CSS -->
+	 <link href="app/assets/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- custom CSS -->
+    <link href="app/assets/css/style.css" rel="stylesheet" /> 
+</head>
+<body>   
+ <!-- Static navbar -->
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+             <!-- Hyperlink for Home Page -->
+            <li><a href="#" class="show-home-button">Home</a></li>
+
+            <!-- Drop Down Menu For Products -->
+            <li  class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" id='read-product' class='read-product-button'>Product List</a></li>
+                    <li><a href="#" id='create-product' class='create-product-button'>Add New Product</a></li>                
+                </ul>
+            </li>
+
+            <!-- Drop Down Menu For Categories -->
+            <li  class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" id='read-cat' class='read-category-button'>Category List</a></li>
+                    <li><a href="#" id='create-cat' class='create-category-button'>Add New Category</a></li>                 
+                </ul>
+            </li>
+
+            
+
+            <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Transactions <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" class="read-transaction-button">Transactions List</a></li>
+        <li><a href="#" class='create-transaction-button'>Add New Transaction</a></li>
+    </ul>
+</li>
+
+
+
+        </ul>
+         <!-- Hyperlink for Log-Out -->
+        <ul class="nav navbar-nav navbar-right">      
+            <li><a href="#" id='logout-user' class='logout-user-button'>Log-Out</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+<!-- our app will be injected here -->
+<div id="app">
+    <div class="container">
+        <div class="page-header">
+            <h1 id="page-title"></h1>
+        </div>
+        <div id="page-content" style="margin-top:20px;"></div>
+    </div>
+</div>
+
+<!-- jQuery library -->
+<script src="app/assets/js/jquery.js"></script>
+
+<!-- bootstrap JavaScript -->
+<script src="app/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- bootbox for confirm pop up -->
+<script src="app/assets/js/bootbox.min.js"></script>
+
+<!-- app js script -->
+<script src="app/app.js"></script>
+
+
+<!-- home page scripts -->
+<script src="app/home/home-page.js"></script>
+<script src="app/home/logout.js"></script>
+
+<!-- product scripts -->
+<script src="app/products/read-all-prod.js"></script>
+<script src="app/products/create-prod.js"></script>
+<script src="app/products/read-one-prod.js"></script>
+<script src="app/products/update-prod.js"></script>
+<script src="app/products/delete-prod.js"></script>
+<script src="app/products/products.js"></script>
+<script src="app/products/search-prod.js"></script>
+
+
+
+
+<script src="app/categories/read-all-cat.js"></script>
+<script src="app/categories/create-cat.js"></script>
+<script src="app/categories/read-one-cat.js"></script>
+<script src="app/categories/update-cat.js"></script>
+<script src="app/categories/delete-cat.js"></script>
+<script src="app/categories/categories.js"></script>
+<script src="app/categories/search-cat.js"></script>
+
+
+
+
+<script src="app/transactions/transactions.js"></script>
+
+<script src="app/transactions/read-all-trans.js"></script>
+<script src="app/transactions/create-trans.js"></script>
+<script src="app/transactions/search-trans.js"></script>
+<script src="app/transactions/read-one-trans.js"></script>
+<script src="app/transactions/update-trans.js"></script>
+<script src="app/transactions/delete-trans.js"></script>
+
+</body>
+</html>
